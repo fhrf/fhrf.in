@@ -59,7 +59,7 @@ body {
 /* INFO CARDS */
 .info-cards {
   margin-top: 40px;
-  background-color: #ffd000;
+  background-color: #ffc107;
 }
 
 .info-cards .container {
@@ -87,9 +87,9 @@ body {
 
   padding: 50px 0;
 
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 .info-cards .card a {
@@ -113,6 +113,7 @@ body {
 .info-cards .card a:hover {
   text-decoration: none;
 }
+
 
 @media only screen and (max-width: 768px) {
   .info-cards .card {
@@ -341,11 +342,41 @@ footer .fab {
   }
 }
 
-.sitemap-list {
+.social-handles{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+.social-handles li{
+  margin: 20px;
+  margin-bottom:1px;
+}
+#sitemap{
+  background:#ffc107;
+}
+@media (max-width:768px){
+  #sitemap .sitemap-list{
+    display: none;
+  }
+
+
+}
+
+
+.sitemap-list {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  font-weight: bold;
+}
+.sitemap-list a{
+  color:#333;
+  
+}
+.sitemap-list a:hover{
+  color:white;
+}
+
 
 footer ul {
   list-style: none;
